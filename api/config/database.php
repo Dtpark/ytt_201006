@@ -15,11 +15,11 @@ return [
     // 服务器地址
     'hostname'        => '127.0.0.1',
     // 数据库名
-    'database'        => 'ytt_dtpark_top',
+    'database'        => '',
     // 用户名
-    'username'        => 'ytt_dtpark_top',
+    'username'        => '',
     // 密码
-    'password'        => 'XRf4WHS3cWtzjwyc',
+    'password'        => '',
     // 端口
     'hostport'        => '',
     // 连接dsn
