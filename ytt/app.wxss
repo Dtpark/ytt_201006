@@ -1,0 +1,14 @@
+/**app.wxss**/
+
+@import "colorui/main.wxss";
+@import "colorui/icon.wxss";
+@import "colorui/dark.wxss";
+
+/* 对齐输入框文字开始 */
+
+.cu-form-group .title {
+    min-width: calc(4em + 15px);
+}
+
+
+/* 对齐输入框文字结束 */

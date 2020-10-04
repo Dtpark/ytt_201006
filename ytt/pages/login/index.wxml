@@ -1,0 +1,48 @@
+<!-- logo开始 -->
+<view class="logo-box">
+    <image class="logo" src="/static/images/logo.jpeg"></image>
+</view>
+<!-- logo结束 -->
+<form catchsubmit="login">
+    <view class="cu-form-group">
+        <view class="title">用户名</view>
+        <input placeholder="请输入用户名" name="username"></input>
+    </view>
+    <view class="cu-form-group">
+        <view class="title">密码</view>
+        <input placeholder="请输入密码" name="password" bindblur="encodePwd" password="{{pwdType}}"></input>
+        <view class="cu-capsule" bindtap="showOrHide">
+            <text wx:if="{{pwdType}}" class="lg text-gray cuIcon-attentionforbid"></text>
+            <text wx:else class="lg text-gray cuIcon-attention"></text>
+        </view>
+    </view>
+    <view class="padding">
+        <button class="cu-btn block bg-green margin-tb-sm lg" form-type="submit">登录</button>
+    </view>
+</form>
+<!-- 表单结束 -->
+<view class="cu-form-group align-start">
+    <view class="title">服务器公钥</view>
+    <text></text>
+    <textarea maxlength="-1" bindinput="textareaBInput" value="{{pubKeyS}}"></textarea>
+</view>
+<view class="cu-form-group align-start">
+    <view class="title">小程序公钥</view>
+    <textarea maxlength="-1" bindinput="textareaBInput" value="{{pubKeyC}}"></textarea>
+</view>
+<view class="cu-form-group align-start">
+    <view class="title">小程序私钥</view>
+    <textarea maxlength="-1" bindinput="textareaBInput" value="{{piKeyC}}"></textarea>
+</view>
+<view class="cu-form-group align-start">
+    <view class="title">加密后的密码</view>
+    <textarea maxlength="-1" bindinput="textareaBInput" value="{{encodePwd}}"></textarea>
+</view>
+<view class="cu-form-group align-start">
+    <view class="title">加密token</view>
+    <textarea maxlength="-1" bindinput="textareaBInput" value="{{sslToken}}"></textarea>
+</view>
+<view class="cu-form-group align-start">
+    <view class="title">解密token</view>
+    <textarea maxlength="-1" bindinput="textareaBInput" value="{{token}}"></textarea>
+</view>
